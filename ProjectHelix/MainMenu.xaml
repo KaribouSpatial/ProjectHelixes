@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="ProjectHelix.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjectHelix"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" NavigationCacheMode="Enabled">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/Textures/Background.jpg" Stretch="UniformTofill"/>
+        <GridView x:Name="gridButtons" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="455" Height="748" IsItemClickEnabled="True" ItemClick="gridButtons_ItemClick">
+            <GridViewItem x:Name="itemHostButton" Background="DodgerBlue" Width="400" Height="140" Content="HOST" FontFamily="Castellar" FontSize="56" ></GridViewItem>
+            <GridViewItem x:Name="itemJoinButton" Background="DodgerBlue" Width="400" Height="140" Content="JOIN" FontFamily="Castellar" FontSize="56" ></GridViewItem>
+            <GridViewItem x:Name="itemShopButton" Background="DodgerBlue" Width="400" Height="140" Content="SHOP" FontFamily="Castellar" FontSize="56" ></GridViewItem>
+        </GridView>
+        <Image HorizontalAlignment="Left" Height="100" Margin="987,10,0,0" VerticalAlignment="Top" Width="369" Source="Assets/Title.png"/>
+    </Grid>
+</Page>
